@@ -21,7 +21,7 @@ sh docker/run.sh
 ### 2) Execute the code
 You can run the application with the following command:
 ```
-python src/main.py
+python -m src
 ```
 Once started the application will first create the database and then launch an interactive menu that will allow you to choose one functionality at a time among the 5 supported, until you decide to quit the application.
 Once chosen a functionality the application will ask you to insert your inputs.
@@ -78,3 +78,9 @@ I introduced the class inputValidator to isolate all the methods needed to perfo
 I introduced the classes interactionAPI and interactionDB to hava a single element interfacing with the API/DB, handling the connections and handling the related errors.
 
 I stored the constant value that the app needs to know all along the execution in the file constants.py. I stored some utility functions in the file utility.py
+
+
+### 3) Execute the tests
+```
+python -m pytest
+```
